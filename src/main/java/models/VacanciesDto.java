@@ -1,19 +1,33 @@
 package models;
-
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.util.List;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class VacanciesDto {
-    private List<VacancyDto> items;
+    private List<Vacancy> items;
+    private Integer found;
 
-    public VacanciesDto(List<VacancyDto> items) {
-        this.items = items;
+    public VacanciesDto() {
     }
 
-    public List<VacancyDto> getItems() {
+    public VacanciesDto(List<Vacancy> items, Integer found) {
+        this.items = items;
+        this.found = found;
+    }
+
+    public List<Vacancy> getItems() {
         return items;
     }
 
-    public void setItems(List<VacancyDto> items) {
+    public void setItems(List<Vacancy> items) {
         this.items = items;
+    }
+
+    public Integer getFound() {
+        return found;
+    }
+
+    public void setFound(Integer found) {
+        this.found = found;
     }
 }

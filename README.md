@@ -1,9 +1,11 @@
-# Домашнее задание по тестированию 2019
+# Домашнее задание hh-school по тестированию 2019
 
 ## Что нужно сделать
-Написать автоматические тесты на /vacancies endpoint api.hh.ru.
-Покрыть тестами только поле text для поиска
-https://github.com/hhru/api/blob/master/docs/vacancies.md#search
-Применить техники тест дизайна
-Тесты должны запускаться и выдавать отчет с результатом
+Автоматические тесты на /vacancies endpoint api.hh.ru.
+Тесты только для поля text поиска
+https://github.com/hhru/api/blob/master/docs/vacancies.md#search.
+
+## Для проверки
+Работа выполнена в IntelliJ IDEA c использованием framework MAVEN.
+Для запуска всех тестов в терминале написать: mvn test
 
